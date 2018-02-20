@@ -15,15 +15,20 @@ namespace EulerProblems
             Problems6_10 ep6_10 = new Problems6_10();
             Problems11_15 ep11_15 = new Problems11_15();
             Problems16_20 ep16_20 = new Problems16_20();
-
+            MathMethods mm = new MathMethods();
 
             Console.WriteLine("Hi Gavin Home");
             /*
             Console.WriteLine("EP1 = " + (ep1_5.Euler1()).ToString());
             Console.WriteLine("EP2 = " + (ep1_5.Euler2()).ToString());
             Console.WriteLine("EP3 = " + (ep1_5.Euler3()).ToString());
+            Console.WriteLine("EP4= " + (ep1_5.Euler4()).ToString());
             Console.WriteLine("EP5= " + (ep1_5.Euler5()).ToString());
             */
+
+
+
+
 
             /*
             Console.WriteLine("EP7 = " + (ep6_10.Euler7()).ToString());

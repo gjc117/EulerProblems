@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-
+//Problems 1-5 complete
 
 public class Problems1_5
 {
@@ -73,7 +73,25 @@ public class Problems1_5
 
 
     }
+    
+    public double Euler4()
+    {
+        double prod = 0;
+        double largestProd = 0;
 
+        for(int i=0; i<1000; i++)
+        {
+            for(int j=999; j>=1; j--)
+            {
+                prod = i * j;
+                if (mm.isPalindrome(prod) && prod > largestProd)
+                    largestProd = prod;
+            }
+        }
+
+        return largestProd;
+    }
+    
     public double Euler5()
     {
         double smallestMultiple =0;
