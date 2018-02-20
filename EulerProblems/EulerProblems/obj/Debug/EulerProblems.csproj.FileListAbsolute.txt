@@ -1,0 +1,7 @@
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerProblems\bin\Debug\EulerProblems.exe.config
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerProblems\bin\Debug\EulerProblems.exe
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerProblems\bin\Debug\EulerProblems.pdb
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerProblems\obj\Debug\EulerProblems.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerProblems\obj\Debug\EulerProblems.exe
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerProblems\obj\Debug\EulerProblems.pdb
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerProblems\obj\Debug\EulerProblems.csproj.CoreCompileInputs.cache
