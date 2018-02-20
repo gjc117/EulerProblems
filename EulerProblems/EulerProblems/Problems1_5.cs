@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 
 
@@ -71,6 +72,39 @@ public class Problems1_5
         return largestPrime;
 
 
+    }
+
+    public double Euler5()
+    {
+        double smallestMultiple =0;
+        double temp =0;
+        int n = 20;
+        bool flag=false;
+
+        for(int i=1; ;i++)
+        {
+            for(int j=1;j<=n;j++)
+            {
+                if (i % j == 0)
+                {
+                    flag = true;
+                    temp = i;
+                }
+                else
+                {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag)
+            {
+                smallestMultiple = temp;
+                break;
+            }
+
+        }
+
+        return smallestMultiple;
     }
 
 }
