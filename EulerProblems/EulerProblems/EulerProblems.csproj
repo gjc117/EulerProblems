@@ -55,6 +55,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Files\Euler11.txt" />
     <Content Include="Files\Euler13.txt" />
     <Content Include="Files\Euler8.txt" />
   </ItemGroup>

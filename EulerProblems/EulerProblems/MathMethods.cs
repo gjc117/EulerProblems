@@ -43,5 +43,20 @@ using System.Threading.Tasks;
             return false;
     }
 
+    public int numberOfDivisors(double x)
+    {
+        int numDiv = 0;
+        int sqrt = (int)Math.Sqrt(x);
+        for(int i=1; i<= sqrt; i++)
+        {
+            if (x % i == 0)
+                numDiv+=2;
+        }
+        if (sqrt * sqrt == x)
+            numDiv--;
+
+        return numDiv;
+    }
+
  }
 
