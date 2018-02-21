@@ -8,6 +8,26 @@ using System.Threading.Tasks;
 
 public class Problems6_10
 {
+    MathMethods mm = new MathMethods();
+
+    public int Euler6()
+    {
+        int n = 100;
+        int sum_of_squares = 0;
+        int sum = 0;
+        int sq_sum = 0;
+
+        for(int i=1; i<=n;i++)
+        {
+            sum_of_squares += (i * i);
+            sum += i;
+        }
+        sq_sum = sum * sum;
+
+        return sq_sum- sum_of_squares;
+    }
+
+
     public long Euler7()
     {
         int pCount = 1;
@@ -68,4 +88,44 @@ public class Problems6_10
         return largestProd;
 
     }
+
+    public double Euler9()
+    {
+        double c = 0;
+        int n = 1000;
+        double prod=0;
+        bool flag = true;
+        int a = 1;
+
+        while(flag)
+        {
+            for(int b=a; b<n ;b++)
+            {
+                c = (Math.Sqrt(((a * a) + (b * b))));
+
+                if (a + b + c == n && a<b && b<c)
+                {
+                    prod = a * b * c;
+                    flag = false;
+                    break;
+                }
+            }
+            a++;
+        }
+        return prod;
+    }
+
+    public double Euler10()
+    {
+        int n = 2000000;
+        double sum_of_primes = 2; ;
+
+        for(int i=3; i<n;i+=2)
+        {
+            if (mm.isPrime(i))
+                sum_of_primes += i;
+        }
+        return sum_of_primes;
+    }
+
 }

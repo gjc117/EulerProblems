@@ -1,9 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+            System.Diagnostics.Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            //Call function
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            Console.WriteLine(ts);
+*/
 
 namespace EulerProblems
 {
@@ -24,16 +33,18 @@ namespace EulerProblems
             Console.WriteLine("EP3 = " + (ep1_5.Euler3()).ToString());
             Console.WriteLine("EP4= " + (ep1_5.Euler4()).ToString());
             Console.WriteLine("EP5= " + (ep1_5.Euler5()).ToString());
-            */
-
-
-
-
-
-            /*
+         
+            Console.WriteLine("EP6 = " + (ep6_10.Euler6()).ToString());
             Console.WriteLine("EP7 = " + (ep6_10.Euler7()).ToString());
             Console.WriteLine("EP8 = " + (ep6_10.Euler8()).ToString());
+            Console.WriteLine("EP9 = " + (ep6_10.Euler9()).ToString());
+            Console.WriteLine("EP10 = " + (ep6_10.Euler10()).ToString());
             */
+
+
+
+
+
 
             /*
             Console.WriteLine("EP13 = " + ep11_15.Euler13());
