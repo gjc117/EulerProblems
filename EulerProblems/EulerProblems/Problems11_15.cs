@@ -11,12 +11,13 @@ public class Problems11_15
 {
     MathMethods mm = new MathMethods();
 
-    public void Euler11()       //Not complete. Got string array list. 
+    public void Euler11()
     {
+        double prod;
+        double largestProd = 0;
+
         List<string[]> table = new List<string[]>();
-
         string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Files\\Euler11.txt";
-
         string line;
         StreamReader r = new StreamReader(path);
 
@@ -28,13 +29,36 @@ public class Problems11_15
 
         r.Close();
 
-        /*
-        foreach(string[] str in table)
+        //Console.WriteLine(table[0].Length);
+        //Console.WriteLine(table.Count());
+
+        for (int i = 0; i < 20; i++)
         {
-            Console.WriteLine(str[19]);
+            for(int j=0;j<20;j++)
+            {
+                if(j+1<20 && j+2<20)
+                {
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i][j + 1]) * Convert.ToDouble(table[i][j + 2]);
+                    if (prod > largestProd)
+                        largestProd = prod;
+                }
+
+                if (i + 1 < 20 && i + 2 < 20)
+                {
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i+1][j]) * Convert.ToDouble(table[i+2][j]);
+                    if (prod > largestProd)
+                        largestProd = prod;
+                }
+
+                if(i + 1 < 20 && i + 2 < 20 && j + 1 < 20 && j + 2 < 20)
+                {
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i + 1][j+1]) * Convert.ToDouble(table[i + 2][j+1]);
+                    if (prod > largestProd)
+                        largestProd = prod;
+                }
+            }
         }
-        */
-        Console.WriteLine(table[0][1]);
+
     }
 
     public double Euler12()
@@ -76,6 +100,48 @@ public class Problems11_15
         r.Close();
 
         return result.ToString().Substring(0, 10);
+
+    }
+
+    public void Euler14()
+    {
+       
+        bool flag;
+        int terms;
+        int largestTerms = 0;
+        double largestStart = 0;
+        double n = 0;
+        double test = 0;
+
+        for (int i=999950;i<1000000;i++)
+
+        {
+            n = i;
+            terms = 1;
+            flag = false;
+            while (!flag)
+            {
+                if (n % 2 == 0)
+                {
+                    n /= 2;
+                    terms++;
+                }
+                else
+                {
+                    n = (3 * n) + 1;
+                    terms++;
+                }
+                if (n == 1 && terms>largestTerms)
+                {
+                    largestTerms = terms;
+                    largestStart = i;
+                    flag = true;
+                }
+            }
+            Console.WriteLine(test++);
+        }
+        Console.WriteLine(largestStart);
+        Console.WriteLine(largestTerms);
 
     }
 }

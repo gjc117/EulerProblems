@@ -47,6 +47,7 @@
     <Compile Include="Problems11_15.cs" />
     <Compile Include="Problems16_20.cs" />
     <Compile Include="Problems1_5.cs" />
+    <Compile Include="Problems21_25.cs" />
     <Compile Include="Problems6_10.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,6 +59,7 @@
     <Content Include="Files\Euler11.txt" />
     <Content Include="Files\Euler13.txt" />
     <Content Include="Files\Euler8.txt" />
+    <Content Include="Files\Names.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
