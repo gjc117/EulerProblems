@@ -22,6 +22,7 @@ namespace EulerProblems
         {
             Console.WriteLine("Hi Gavin Home");
 
+            //Instantiating methods
             /*
             Problems1_5 ep1_5 = new Problems1_5();
             Problems6_10 ep6_10 = new Problems6_10();
@@ -32,6 +33,7 @@ namespace EulerProblems
             Problems21_25 ep21_25 = new Problems21_25();
             MathMethods mm = new MathMethods();
 
+            //Completed Problems
             /*
             
             Console.WriteLine("EP1 = " + (ep1_5.Euler1()).ToString());
@@ -44,9 +46,7 @@ namespace EulerProblems
             Console.WriteLine("EP8 = " + (ep6_10.Euler8()).ToString());
             Console.WriteLine("EP9 = " + (ep6_10.Euler9()).ToString());
             Console.WriteLine("EP10 = " + (ep6_10.Euler10()).ToString());
-       
-
-
+            Console.WriteLine("EP11 = " + (ep11_15.Euler11()).ToString());
             Console.WriteLine("EP12 = " + ep11_15.Euler12().ToString());
             Console.WriteLine("EP13 = " + ep11_15.Euler13());
 
@@ -56,7 +56,7 @@ namespace EulerProblems
             Console.WriteLine("EP22 = " + ep21_25.Euler22().ToString());
             */
 
-            ep11_15.Euler11();
+            ep11_15.Euler14();
 
 
             Console.ReadLine();

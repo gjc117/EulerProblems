@@ -11,11 +11,11 @@ public class Problems11_15
 {
     MathMethods mm = new MathMethods();
 
-    public void Euler11()
+    public double Euler11()
     {
-        double prod;
+        double prod = 0; ;
         double largestProd = 0;
-
+        int size = 20;
         List<string[]> table = new List<string[]>();
         string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Files\\Euler11.txt";
         string line;
@@ -29,36 +29,65 @@ public class Problems11_15
 
         r.Close();
 
-        //Console.WriteLine(table[0].Length);
-        //Console.WriteLine(table.Count());
-
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < size; i++)
         {
-            for(int j=0;j<20;j++)
+            for (int j = 0; j < size; j++)
             {
-                if(j+1<20 && j+2<20)
+
+                if (j + 1 < size && j + 2 < size && j + 3 < size)
                 {
-                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i][j + 1]) * Convert.ToDouble(table[i][j + 2]);
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i][j + 1]) * Convert.ToDouble(table[i][j + 2]) * Convert.ToDouble(table[i][j + 3]);
                     if (prod > largestProd)
                         largestProd = prod;
                 }
 
-                if (i + 1 < 20 && i + 2 < 20)
+                if (i + 1 < size && i + 2 < size && i + 3 < size)
                 {
-                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i+1][j]) * Convert.ToDouble(table[i+2][j]);
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i + 1][j]) * Convert.ToDouble(table[i + 2][j]) * Convert.ToDouble(table[i + 3][j]);
                     if (prod > largestProd)
                         largestProd = prod;
                 }
 
-                if(i + 1 < 20 && i + 2 < 20 && j + 1 < 20 && j + 2 < 20)
+                if (i + 1 < size && i + 2 < size && i + 3 < size && j + 1 < size && j + 2 < size && j + 3 < size)
                 {
-                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i + 1][j+1]) * Convert.ToDouble(table[i + 2][j+1]);
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i + 1][j + 1]) * Convert.ToDouble(table[i + 2][j + 2]) * Convert.ToDouble(table[i + 3][j + 3]);
                     if (prod > largestProd)
                         largestProd = prod;
                 }
+
             }
         }
 
+        for (int i = size-1; i>=0; i--)
+        {
+            for (int j = 0; j < size; j++)
+            {
+
+                if (j + 1 < size && j + 2 < size && j + 3 < size)
+                {
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i][j + 1]) * Convert.ToDouble(table[i][j + 2]) * Convert.ToDouble(table[i][j + 3]);
+                    if (prod > largestProd)
+                        largestProd = prod;
+                }
+
+                if (i - 1 >= 0 && i - 2 >= 0 && i - 3 >= 0)
+                {
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i - 1][j]) * Convert.ToDouble(table[i - 2][j]) * Convert.ToDouble(table[i - 3][j]);
+                    if (prod > largestProd)
+                        largestProd = prod;
+                }
+
+                if (i - 1 >= 0 && i + 2 >= 0 && i - 3 >= 0 && j + 1 < size && j + 2 < size && j + 3 < size)
+                {
+                    prod = Convert.ToDouble(table[i][j]) * Convert.ToDouble(table[i - 1][j + 1]) * Convert.ToDouble(table[i - 2][j + 2]) * Convert.ToDouble(table[i - 3][j + 3]);
+                    if (prod > largestProd)
+                        largestProd = prod;
+                }
+
+            }
+        }
+
+        return largestProd;
     }
 
     public double Euler12()
