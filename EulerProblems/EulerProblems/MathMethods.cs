@@ -58,5 +58,29 @@ using System.Threading.Tasks;
         return numDiv;
     }
 
+    public int Collatz(int n)
+    {
+        int num = n;
+        int terms = 1;
+        bool flag = false;
+
+        while (!flag)
+        {
+            if (num % 2 == 0)
+            {
+                num /= 2;
+                terms++;
+            }
+            else
+            {
+                num = (3 * num) + 1;
+                terms++;
+            }
+            if (num == 1)
+                flag = true;
+        }
+        return terms;
+    }
+
  }
 

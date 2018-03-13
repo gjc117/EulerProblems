@@ -49,6 +49,7 @@ namespace EulerProblems
             Console.WriteLine("EP11 = " + (ep11_15.Euler11()).ToString());
             Console.WriteLine("EP12 = " + ep11_15.Euler12().ToString());
             Console.WriteLine("EP13 = " + ep11_15.Euler13());
+            Console.WriteLine("EP14 = " + ep11_15.Euler14().ToString());
 
 
             Console.WriteLine("EP16 = " + ep16_20.Euler16().ToString());
@@ -56,7 +57,6 @@ namespace EulerProblems
             Console.WriteLine("EP22 = " + ep21_25.Euler22().ToString());
             */
 
-            ep11_15.Euler14();
 
 
             Console.ReadLine();

@@ -132,18 +132,15 @@ public class Problems11_15
 
     }
 
-    public void Euler14()
-    {
-       
+    public double Euler14()
+    {       
         bool flag;
         int terms;
         int largestTerms = 0;
         double largestStart = 0;
         double n = 0;
-        double test = 0;
 
-        for (int i=999950;i<1000000;i++)
-
+        for (int i= 837700; i< 837900; i++)
         {
             n = i;
             terms = 1;
@@ -160,18 +157,20 @@ public class Problems11_15
                     n = (3 * n) + 1;
                     terms++;
                 }
-                if (n == 1 && terms>largestTerms)
+                if (n == 1)
                 {
-                    largestTerms = terms;
-                    largestStart = i;
+                    if(terms > largestTerms)
+                    {
+                        largestTerms = terms;
+                        largestStart = i;
+                    }
                     flag = true;
                 }
+                
             }
-            Console.WriteLine(test++);
         }
-        Console.WriteLine(largestStart);
-        Console.WriteLine(largestTerms);
-
+        return largestStart;
     }
+
 }
 
