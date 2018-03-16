@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
- class MathMethods
+public class MathMethods
  {
     public bool isPrime(double x)
     {

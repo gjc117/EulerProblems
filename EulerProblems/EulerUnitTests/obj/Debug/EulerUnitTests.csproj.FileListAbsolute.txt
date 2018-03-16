@@ -1,0 +1,16 @@
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\EulerUnitTests.dll
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\EulerUnitTests.pdb
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\EulerProblems.exe
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\EulerProblems.pdb
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\EulerProblems.exe.config
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\obj\Debug\EulerUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\obj\Debug\EulerUnitTests.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\obj\Debug\EulerUnitTests.dll
+C:\Users\Admin\Documents\EulerProblems.git\EulerProblems\EulerUnitTests\obj\Debug\EulerUnitTests.pdb
