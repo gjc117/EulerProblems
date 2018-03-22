@@ -27,7 +27,6 @@ public class Problems6_10
         return sq_sum- sum_of_squares;
     }
 
-
     public long Euler7()
     {
         int pCount = 1;

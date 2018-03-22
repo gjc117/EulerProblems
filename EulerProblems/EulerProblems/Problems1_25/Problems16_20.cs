@@ -33,11 +33,11 @@ public class Problems16_20
     {
         string[] words = { "and", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety", "hundred", "thousand" };
         int sum = 0;
-        int n = 444;
-        for(int i=100; i<=999; i++)
+ 
+        for(int i=1; i<=1000; i++)
         {
             if (i >= 1 && i <= 19)
-                Ints1_19(words[i]);
+                sum += words[i].Length;
             else if (i < 100 && i % 10 == 0)
             {
                 string str = i.ToString();
@@ -46,7 +46,7 @@ public class Problems16_20
                 sum += words[tmpInt1 + 18].Length;
             }
 
-            else if (i >= 20 && i < 100)
+            else if (i > 20 && i < 100)
             {
                 string str = i.ToString();
                 char[] tmp = str.ToCharArray();
@@ -88,11 +88,7 @@ public class Problems16_20
         }
         Console.WriteLine(sum);
     }
-    static int Ints1_19(string str)
-    {
-        int sum = 0;
-        return sum += str.Length;
-    }
+    
         
 
 }

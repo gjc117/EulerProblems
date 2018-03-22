@@ -8,12 +8,13 @@ namespace EulerUnitTests
     [TestClass]
     public class MathUnitTests
     {
+        MathMethods mm = new MathMethods();
+
         [TestMethod]
         public void PrimeNumberIsPrime_true()
         {
             // arrange  
             double x = 13;
-            MathMethods mm = new MathMethods();
 
             // act  
             bool actual = mm.isPrime(x);
@@ -28,7 +29,6 @@ namespace EulerUnitTests
         {
             // arrange  
             double x = 1100;
-            MathMethods mm = new MathMethods();
 
             // act  
             bool actual = mm.isPrime(x);
@@ -43,7 +43,6 @@ namespace EulerUnitTests
         {
             // arrange  
             double x = 9009;
-            MathMethods mm = new MathMethods();
 
             // act  
             bool actual = mm.isPalindrome(x);
@@ -58,7 +57,6 @@ namespace EulerUnitTests
         {
             // arrange  
             double x = 1100;
-            MathMethods mm = new MathMethods();
 
             // act  
             bool actual = mm.isPalindrome(x);
@@ -67,5 +65,36 @@ namespace EulerUnitTests
             bool expected = false;
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void numberOfDivisors_pass()
+        {
+            //arrange
+            int x = 20;
+
+            //act
+            int actual = mm.numberOfDivisors(x);
+
+            //assert
+            int expected = 6;
+            Assert.AreEqual(expected, actual);
+            
+        }
+
+        [TestMethod]
+        public void Collatz_pass()
+        {
+            //arrange
+            int x = 13;
+
+            //act
+            int actual = mm.Collatz(x);
+
+            //assert
+            int expected = 10;
+            Assert.AreEqual(expected, actual);
+      
+        }
+
     }
 }
